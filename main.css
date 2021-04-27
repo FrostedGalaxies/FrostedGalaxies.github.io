@@ -1,15 +1,17 @@
 :root {
-    --green: #e2ecec;
+    --green: #fff8fb;
     --white: #ffffff;
-    --black: #6b6b6b;
+    --black: #555555;
+    --dark: url('https://i.ibb.co/pRW2T28/real-dark.png');
+    --light: url('https://i.ibb.co/N22dt4N/real-light.png');
   }
   .btn {
-    position: absolute;
-    top: 20px;
-    left: 250px;
+    position: relative;
+    top: -15px;
+    left: 280px;
     height: 45px;
     width: 60px;
-    /* border-radius: 50%; */
+    border-radius: 15%;
     border: 2px solid var(--btnFontColor);
     color: var(--btnFontColor);
     background-color: var(--btnBg);
@@ -23,7 +25,74 @@
   * {
     font-family: helvetica;
   }
+
+  .btn2 {
+    position: relative;
+    top: 0px;
+    left: -40px;
+    height: 45px;
+    width: 80px;
+    border-radius: 15%;
+    border: 2px solid var(--btnFontColor);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    transition-duration: 0.4s;
+  }
+  .btn2:hover {
+    background-color: var(--btnFontColor);
+    color: var(--btnBg);
+  }
+  .btn3 {
+    position: relative;
+    top: 0px;
+    left: -20px;
+    height: 45px;
+    width: 80px;
+    border-radius: 15%;
+    border: 2px solid var(--btnFontColor);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    transition-duration: 0.4s;
+  }
+  .btn3:hover {
+    background-color: var(--btnFontColor);
+    color: var(--btnBg);
+  }
+  .btn4 {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    height: 45px;
+    width: 80px;
+    border-radius: 15%;
+    border: 2px solid var(--btnFontColor);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    transition-duration: 0.4s;
+  }
+  .btn4:hover {
+    background-color: var(--btnFontColor);
+    color: var(--btnBg);
+  }
+  .btn5 {
+    position: relative;
+    top: 0px;
+    left: 20px;
+    height: 45px;
+    width: 80px;
+    border-radius: 15%;
+    border: 2px solid var(--btnFontColor);
+    color: var(--btnFontColor);
+    background-color: var(--btnBg);
+    transition-duration: 0.4s;
+  }
+  .btn5:hover {
+    background-color: var(--btnFontColor);
+    color: var(--btnBg);
+  }
+
   #rcorners {
+    position: relative;
     margin: auto;
     border-radius: 15px;
     background: var(--btnFontColor);
@@ -31,42 +100,46 @@
     width: 600px;
     height: 300px;  
     color: var(--bg);
+    box-shadow: 10px 5px 5px rgba(49, 49, 49, 0.418);
+    z-index: 2;
   }
-  
-  
-  body {
-      background: var(--bg);
+  div.mainText {
+    font-size: 18px;
   }
 
 body {
+  background-image: var(--backPhoto);
+  background-color: #ffffff;
+  position: relative;
+  z-index: 3;
     font-family: monospace;
     text-align: center;
     color: var(--fontColor);
 }
 h1 {
   text-align: center;
+  font-family: monospace;
+}
+img {
+  border-radius: 50%;
 }
 
 ul {
     font-family: helvetica;
 }
-li {
-    list-style: circle;
-  }
-  
-  .list {
-    list-style: square;
-  }
-  
+
   .light-theme {
+    --backPhoto: var(--light);
     --bg: var(--green);
     --fontColor: var(--black);
     --btnBg: var(--green);
     --btnFontColor: var(--black);
+
   }
   .dark-theme {
+    --backPhoto: var(--dark);
     --bg: var(--black);
     --fontColor: var(--green);
     --btnBg: var(--black);
-    --btnFontColor: var(--white);
+    --btnFontColor: var(--green);
   }
